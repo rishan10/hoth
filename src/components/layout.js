@@ -19,6 +19,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles({
   list: {
@@ -74,7 +75,9 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open Navbar</Button>
+      <Button onClick={toggleDrawer(true)}>
+        <MenuIcon/>
+      </Button>
      
       <Drawer open={state.displaySideNav} onClose={toggleDrawer(false)}>
         {sideList()}
