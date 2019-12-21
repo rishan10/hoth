@@ -5,9 +5,16 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Button from '@material-ui/core/Button';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    
+    <Button variant="contained" color="primary">
+      Hello World
+    </Button>
+
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
