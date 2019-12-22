@@ -5,17 +5,28 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Typical from 'react-typical'
+import "./index.css"
+
+
+const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Thinker.", 500]
+
 const IndexPage = () => (
-  <Layout>
+  <div>
+    <Layout />
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div class="intro_div">
+      <h1 class="intro_h1">Hi, I'm Rishan.</h1>
+      <br></br>
+      <p>
+        I'm a <Typical loop={Infinity} steps={things} />
+      </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+
+  </div>
+
+
+
 )
 
 export default IndexPage
