@@ -29,6 +29,11 @@ const styles = {
   appBar: {
     background: '#12305e',
 
+  },
+  buttons: { 
+    color: 'white', 
+    textDecoration: 'none',
+    
   }
 };
 
