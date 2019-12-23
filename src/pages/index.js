@@ -12,9 +12,10 @@ import "./index.css"
 const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Thinker.", 500]
 
 const IndexPage = () => (
-  <div>
-    <Layout />
+<div>
+  <Layout/>
     <SEO title="Home" />
+    <div class="center">
     <div class="intro_div">
       <h1 class="intro_h1">Hi, I'm Rishan.</h1>
       <br></br>
@@ -22,8 +23,11 @@ const IndexPage = () => (
         I'm a <Typical loop={Infinity} steps={things} />
       </p>
     </div>
+    </div>
+    
+    </div>
 
-  </div>
+
 
 
 
