@@ -39,3 +39,6 @@ p {
     transform: translate(-50%, -50%);
   }
 
+.landing {
+    background-color: rgb(255, 255, 255);
+}
