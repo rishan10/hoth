@@ -9,26 +9,30 @@ import Typical from 'react-typical'
 import "./index.css"
 import "../components/animate.css"
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+
 
 const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Thinker.", 500]
 
 const IndexPage = () => (
-<div>
-  <div class="animated fadeInLeft"><Layout/></div>
+  <div>
+    <div class="animated fadeInLeft"><Layout /></div>
     <SEO title="Home" />
     <div class="center">
-    <div class="intro_div">
-      <div class="animated zoomIn">
-      <h1 class="intro_h1">Hi, I'm Rishan.</h1>
-      <br></br>
-      <p>
-        I'm a <Typical loop={Infinity} steps={things} />
-      </p>
+      <div class="intro_div">
+        <div class="animated zoomIn">
+          <h1 class="intro_h1">Hi, I'm Rishan.</h1>
+          <br></br>
+          <p>
+            I'm a <Typical loop={Infinity} steps={things} />
+          </p>
+        </div>
       </div>
     </div>
-    </div>
-    
-    </div>
+
+  </div>
 
 
 
