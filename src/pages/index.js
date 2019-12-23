@@ -9,12 +9,6 @@ import Typical from 'react-typical'
 import "./index.css"
 import "../components/animate.css"
 
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
-
-import Particles from 'react-particles-js';
-
 
 const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Thinker.", 500]
 
