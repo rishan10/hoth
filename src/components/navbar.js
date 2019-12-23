@@ -4,52 +4,62 @@ import { Link } from "gatsby"
 import "./layout.css"
 
 import AppBar from '@material-ui/core/AppBar';
-import { Toolbar, Button } from "@material-ui/core"
+import { Toolbar } from "@material-ui/core"
+
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import MailIcon from '@material-ui/icons/Mail';
 
 
 
 const styles = {
     // This group of buttons will be aligned to the right
     rightToolbar: {
-      marginLeft: 'auto',
-      marginRight: 0,
+        marginLeft: 'auto',
+        marginRight: 0,
     },
     logoButton: {
-      marginRight: 16,
-      marginLeft: -12,
+        marginRight: 16,
+        marginLeft: -12,
     },
     appBar: {
-      background: '#12305e',
-  
+        background: '#12305e',
+
     },
-    buttons: { 
-      color: 'white', 
-      textDecoration: 'none',
-      
+    buttons: {
+        color: 'white',
+        textDecoration: 'none',
+
     }
-  };
+};
 
 
 class Navbar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            width: window != null ? window.innerWidth : 751,
-            height: window != null ? window.innerHeight : 751,
+            width: typeof window !== 'undefined' ? window.innerWidth : 751,
+            height: typeof window !== 'undefined' ? window.innerHeight : 751,
         }
     }
     updateDimensions = () => {
 
-        this.setState({ width: window != null ? window.innerWidth : 751, height: window != null ? window.innerHeight : 751 });
-      };
-      componentDidMount() {
-          if(window != null)
+        this.setState({ width: typeof window !== 'undefined' != null ? window.innerWidth : 751, height: typeof window !== 'undefined' != null ? window.innerHeight : 751 });
+    };
+    componentDidMount() {
+        if (typeof window !== 'undefined')
             window.addEventListener('resize', this.updateDimensions);
-      }
-      componentWillUnmount() {
-          if(window != null)
+    }
+    componentWillUnmount() {
+        if (typeof window !== 'undefined')
             window.removeEventListener('resize', this.updateDimensions);
-      }
+    }
 
 
 
@@ -67,6 +77,15 @@ class Navbar extends React.Component {
 
 
                         <div style={styles.rightToolbar}>
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                                edge="end"
+                                // onClick={handleDrawerOpen}
+                                // className={clsx(open && classes.hide)}
+                            >
+                                <MenuIcon />
+                            </IconButton>
 
                             <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">About</Link></span>
 
