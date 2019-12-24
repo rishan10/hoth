@@ -83,7 +83,6 @@ class Navbar extends React.Component {
                     </Toolbar>
 
                 </AppBar>
-                <h1>space</h1>
             </div>
         )
     }
@@ -118,7 +117,6 @@ class Navbar extends React.Component {
                     </Toolbar>
 
                 </AppBar>
-                <h1></h1>
 
             </div>
         )
