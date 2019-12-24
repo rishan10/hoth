@@ -8,13 +8,6 @@ import { Toolbar } from "@material-ui/core"
 
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 
 
 
@@ -49,8 +42,7 @@ class Navbar extends React.Component {
         }
     }
     updateDimensions = () => {
-
-        this.setState({ width: typeof window !== 'undefined' != null ? window.innerWidth : 751, height: typeof window !== 'undefined' != null ? window.innerHeight : 751 });
+        this.setState({ width: typeof window !== 'undefined' ? window.innerWidth : 751, height: typeof window !== 'undefined' ? window.innerHeight : 751 });
     };
     componentDidMount() {
         if (typeof window !== 'undefined')
@@ -86,21 +78,12 @@ class Navbar extends React.Component {
                             >
                                 <MenuIcon />
                             </IconButton>
-
-                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">About</Link></span>
-
-                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Education</Link></span>
-
-                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Experience</Link></span>
-
-                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Projects</Link></span>
-
                         </div>
 
                     </Toolbar>
 
                 </AppBar>
-
+                <h1>space</h1>
             </div>
         )
     }
@@ -135,13 +118,14 @@ class Navbar extends React.Component {
                     </Toolbar>
 
                 </AppBar>
+                <h1></h1>
 
             </div>
         )
     }
 
     render() {
-        if (this.state.width < 750) {
+        if (this.state.width < 900) {
             return this.getSmallerBar()
         } else {
             return this.getBiggerBar()
