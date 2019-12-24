@@ -9,10 +9,9 @@ import Typical from 'react-typical'
 import "./index.css"
 import "../components/animate.css"
 
-import Typography from '@material-ui/core/Typography';
 
 
-const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Thinker.", 500]
+const things = ["Leader.", 500, "Coder.", 500, "Musician.", 500, "Gamer.", 500, "Builder.", 500]
 
 
 const IndexPage = () => (
