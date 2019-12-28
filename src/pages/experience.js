@@ -5,10 +5,13 @@ import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 import Typing from 'react-typing-animation'
 
+import SEO from "../components/seo"
+
 
 import Honey from '../images/honey.png'
 import Yahoo from '../images/yahoo.png'
 import Tala from '../images/tala.png'
+import Microsoft from '../images/microsoft.png'
 
 import './experience.css'
 
@@ -16,12 +19,25 @@ export default class Experience extends Component {
     render() {
         return (
             <div>
+                <SEO title="Experience"/>
                 <Layout />
                 <div class='text'>
                     <Typing><Typography variant="h2">Experience</Typography></Typing>
                 
                 <Divider/>
                 <Timeline lineColor={'#ddd'}>
+                <TimelineItem
+                        key="004"
+                        dateText="June '20 – Sept '20"
+                        dateInnerStyle={{ background: '#12305e' }}
+                    >
+                        <img src={Microsoft}/>
+                        <Typography variant="h4">Microsoft</Typography>
+                        <Typography variant="h6">SWE Intern -- Redmond, CA</Typography>
+                        <Typography variant="paragraph">
+                            Stay tuned!
+                        </Typography>
+                    </TimelineItem>
                     <TimelineItem
                         key="004"
                         dateText="Jan '20 – April '20"
