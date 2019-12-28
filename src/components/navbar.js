@@ -82,7 +82,7 @@ class Navbar extends React.Component {
 
                             <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Education</Link></span>
 
-                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Experience</Link></span>
+                            <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/experience">Experience</Link></span>
 
                             <span class="button"><Link style={{ color: 'white', textDecoration: 'none' }} to="/404">Projects</Link></span>
 
