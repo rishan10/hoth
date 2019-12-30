@@ -2,4 +2,7 @@ img {
     width: 50%;
     height: 50%;
     display: list-item;
+    text-shadow: lawngreen;
+    text-size-adjust: 80%;
 }
+
