@@ -26,18 +26,6 @@ export default class Experience extends Component {
                 
                 <Divider/>
                 <Timeline lineColor={'#ddd'}>
-                <TimelineItem
-                        key="004"
-                        dateText="June '20 – Sept '20"
-                        dateInnerStyle={{ background: '#12305e' }}
-                    >
-                        <img src={Microsoft}/>
-                        <Typography variant="h4">Microsoft</Typography>
-                        <Typography variant="h6">SWE Intern -- Redmond, CA</Typography>
-                        <Typography variant="paragraph">
-                            Stay tuned!
-                        </Typography>
-                    </TimelineItem>
                     <TimelineItem
                         key="004"
                         dateText="Jan '20 – April '20"

@@ -76,7 +76,7 @@ export default function PersistentDrawerRight() {
       <List>
         
             <ListItem style={styles.buttons} button><span class="button"><Link style={{ color: 'black', textDecoration: 'none' }} to="/about">About</Link></span></ListItem>
-            <ListItem style={styles.buttons} button><span class="button"><Link style={{ color: 'black', textDecoration: 'none' }} to="/404">Education</Link></span></ListItem>
+            <ListItem style={styles.buttons} button><span class="button"><Link style={{ color: 'black', textDecoration: 'none' }} to="/education">Education</Link></span></ListItem>
             <ListItem style={styles.buttons} button><span class="button"><Link style={{ color: 'black', textDecoration: 'none' }} to="/experience">Experience</Link></span></ListItem>
             <ListItem style={styles.buttons} button><span class="button"><Link style={{ color: 'black', textDecoration: 'none' }} to="/404">Projects</Link></span></ListItem>
        
