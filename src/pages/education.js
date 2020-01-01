@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import { Typography, Divider, List, ListItem } from '@material-ui/core'
 import Typing from 'react-typing-animation/dist/Typing'
-import UCLA from '../images/ucla.png'
+import SEO from '../components/seo'
 
 import './education.css'
 
@@ -13,6 +13,7 @@ export default class Education extends Component {
     render() {
         return (
             <div>
+                <SEO title="Education"/>
                 <Layout/>
                 <div class='text'>
                     
