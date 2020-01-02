@@ -57,7 +57,7 @@ const projectData = {
         name: "Personal Website",
         image: Hoth,
         codeLink: "https://github.com/rishan10/hoth",
-        description: "This website was also built by me using Gatsby :)",
+        description: "This website was also built by me using GatsbyJS!",
     }
 }
 
