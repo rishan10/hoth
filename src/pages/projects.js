@@ -11,6 +11,8 @@ import SEO from '../components/SEO'
 import Play from '../images/play.png';
 import Spinder from '../images/spinder.png';
 import Tanks from '../images/tanks.png';
+import Hoth from '../images/hoth.png';
+
 
 import './projects.css'
 
@@ -43,7 +45,7 @@ const projectData = {
         name: "Tanks",
         image: Tanks,
         codeLink: "https://github.com/rishan10/tanks",
-        description: "A tank game similar to the classic breakout! Built with WebGL.",
+        description: "A 3D, tank-themed version of the classic BREAKOUT game! Built with WebGL.",
     },
     quizzical: {
         name: "",
@@ -51,6 +53,12 @@ const projectData = {
         codeLink: "",
         description: "",
     },
+    hoth: {
+        name: "Personal Website",
+        image: Hoth,
+        codeLink: "https://github.com/rishan10/hoth",
+        description: "This website was also built by me using Gatsby :)",
+    }
 }
 
 export default function Projects() {
@@ -74,6 +82,7 @@ export default function Projects() {
                         <Grid item ><ProjectCard project={projectData.play} /></Grid>
                         <Grid item ><ProjectCard project={projectData.spinder} /></Grid>
                         <Grid item><ProjectCard project={projectData.tanks} /></Grid>
+                        <Grid item><ProjectCard project={projectData.hoth} /></Grid>
                     </Grid>
 
                 </div>

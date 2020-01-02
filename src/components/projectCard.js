@@ -13,7 +13,8 @@ import { IconButton } from '@material-ui/core';
 
 const useStyles = makeStyles({
     card: { 
-        maxWidth: 345,
+        square: true,
+        maxWidth: 400,
         
     },
     media: {
